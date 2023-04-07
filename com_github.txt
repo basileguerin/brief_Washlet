@@ -1,0 +1,18 @@
+# Recuperer le projet sur le depot
+git checkout master  # pour se mettre sur la branche master
+git pull            # On recupere le projet
+git checkout Kevin  # On se remet sur notre branch
+git merge master    # pour recuperer en local le projet
+
+
+# Pour ajouter une modification sur votre branch distante
+git add .
+git commit -m "modif requirement"
+git push origin Kevin
+
+# pour recuperer une branch d'un collègue
+git checkout Kevin
+git merge origin/"nom branche collègue"
+
+# Pour pousser votre branch distante sur le projet principal
+git push origin Kevin:master
