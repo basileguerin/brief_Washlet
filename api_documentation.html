@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiottes API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chiottes API Documentation</h1>
+
+    <h2>Endpoint: /chiottes/add</h2>
+    <p><strong>Method:</strong> POST</p>
+    <p><strong>Description:</strong> Ajoute un nouveau produit à la base de données.</p>
+    <p><strong>Request body:</strong></p>
+    <pre>
+{
+  "titre": "string",
+  "ref": "string",
+  "dimension": "string",
+  "couleur": "string"
+}
+    </pre>
+
+    <h2>Endpoint: /chiottes/delete_all</h2>
+    <p><strong>Method:</strong> DELETE</p>
+    <p><strong>Description:</strong> Supprime tous les produits de la base de données.</p>
+
+    <h2>Endpoint: /chiottes/delete/{chiotte_id}</h2>
+    <p><strong>Method:</strong> DELETE</p>
+    <p><strong>Description:</strong> Supprime un produit de la base de données en fonction de son identifiant.</p>
+
+    <h2>Endpoint: /chiottes/update/{chiotte_id}</h2>
+    <p><strong>Method:</strong> PUT</p>
+    <p><strong>Description:</strong> Met à jour les informations d'un produit en fonction de son identifiant.</p>
+    <p><strong>Request body:</strong></p>
+    <pre>
+{
+  "titre": "string",
+  "ref" : "string",
+  "dimension": "string",
+  "couleur": "string"
+}
+    </pre>
+
+    <h2>Endpoint: /chiottes</h2>
+    <p><strong>Method:</strong> GET</p>
+    <p><strong>Description:</strong> Renvoie la liste de tous les produits.</p>
+
+    <h2>Endpoint: /chiottes/add_all</h2>
+    <p><strong>Method:</strong> POST</p>
+    <p><strong>Description:</strong> Ajoute tous les produits à la base de données.</p>
+
+</body>
+</html>
